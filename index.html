@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Note Pad</title>
+</head>
+<body>
+    <h1> </h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        var a = "";
+        $(document).keydown(function (event) {
+            let b = event.key;
+            if (b == 'Backspace') a = a.slice(0, -1);
+            else
+                a += b;
+            $("h1").text(a);
+        });
+
+    </script>
+</body>
+</html>
